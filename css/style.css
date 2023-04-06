@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    min-width: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    overflow-x: hidden;
+}
+.comboDescInicio R1{
+    color: brown;
+    text-align: center;
+}
+.comboDescInicio p .preçoAnterior{
+    color: rgb(55, 94, 140);
+    text-align: center;
+}
+.InicioblackSkull R1{
+    color: rgb(2, 58, 43);
+    text-align: center;
+}
