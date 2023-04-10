@@ -64,7 +64,81 @@
     </section>
 
 
+    <br><br><br><br><br>
 
+  <section>
+    <div class="container-fluit  ">
+      <div class="row ">
+        <div class="col-md"></div>
+        <div class="col-md">
+          <div class="card" style="width: 265px ;">
+            <img class="card-img-top" src="img/nutriGood/barraBanana.png" alt="Imagem de capa do card ">
+            <div class="card-body">
+              <h5 class="card-title text-center">Barra Banana</h5>
+              <p class="card-text">Com cobertura de chocolate meio amargo
+                <br>Marca: Nutri Good
+                <br>
+                <R1><strong>R$ 2,99</strong></R1>
+              </p>
+              <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card" style="width: 265px ;">
+            <img class="card-img-top" src="img/nutriGood/barraCookiesECream.png" alt="Imagem de capa do card ">
+            <div class="card-body">
+              <h5 class="card-title text-center">Barra de Cookies</h5>
+              <p class="card-text">Cookies e Cream 
+                <br> Zero Açucar
+                <br>Marca: Nutri Good
+                <br>
+                <R1><strong>R$ 346,63</strong></R1>
+              </p>
+              <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card" style="width: 265px ;">
+            <img class="card-img-top" src="img/comboDesconto/cabelo.png" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Kit Dermocosmeticos</h5>
+              <p class="card-text">Marca: Diversas
+                <br>Produtos para cabelo
+                <br>
+                <R1><strong>R$ 70,27</strong></R1>
+              </p>
+              <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card" style="width: 265px ;">
+            <img class="card-img-top" src="img/comboDesconto/higieneOral.png" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Kit Higiene </h5>
+              <p class="card-text">Marca: Natura
+                <br>Faixa etária: Bebê
+                <br><s>
+                  <R1 class="preçoAnterior">R$ 77,50</R1>
+                </s>
+                <br>
+                <R1><strong>R$ 66,25</strong></R1>
+              </p>
+              <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md"></div>
+      </div>
+    </div>
+  </section>
+
+  <br><br><br>
 
 
 
