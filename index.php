@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/logos/logoPanaceiaGoogle.png">
   <title>Farmacia Panaceia | 24h Online</title>
@@ -72,13 +72,13 @@
               <a href="nutrigoodProdutos.php"><img class="d-block w-100" src="img/slides/nutrigoodSlides.png" alt="Primeiro Slide"></a>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/slides/consultasOnlineSlides.png" alt="Segundo Slide">
+              <a href=""> <img class="d-block w-100" src="img/slides/consultasOnlineSlides.png" alt="Segundo Slide"> </a>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="img/slides/freteGratisSlides.png" alt="Terceiro Slide">
             </div>
             <div class="carousel-item ">
-              <img class="d-block w-100" src="img/slides/suplementosSlides.png" alt="Quarto Slide">
+            <a href="blackSkull.php"> <img class="d-block w-100" src="img/slides/suplementosSlides.png" alt="Quarto Slide"> </a>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="img/slides/belezaLorealSlides.png" alt="Quinto Slide">
@@ -249,8 +249,8 @@
             <img class="card-img-top" src="img/blackSkull/coqueteleira.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Coqueteleira</h5>
-              <p class="card-text"> 600ml
-                <br> Marca: Black Skull
+              <p class="card-text">Marca: Black Skull 
+                <br> 600ml
                 <br>Faixa etária: +16
                 <br>
                 <R1><strong>R$ 15,99</strong></R1>
@@ -265,8 +265,8 @@
             <img class="card-img-top" src="img/blackSkull/kitBS.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Kit Black Skull</h5>
-              <p class="card-text"> + Brinde
-                <br> Marca: Black Skull
+              <p class="card-text"> Marca: Black Skull
+                <br>+ Brinde 
                 <br>Faixa etária: +16
                 <br>
                 <R1><strong>R$ 209,90</strong></R1>
@@ -281,8 +281,8 @@
             <img class="card-img-top" src="img/blackSkull/thermoFlame.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Thermo Flame</h5>
-              <p class="card-text"> 60 Tabletes
-                <br>Marca: Black Skull
+              <p class="card-text"> Marca: Black Skull
+                <br>60 Tabletes 
                 <br>Faixa etária: +16
                 <br>
                 <R1><strong>R$ 37,20</strong></R1>
@@ -297,8 +297,8 @@
             <img class="card-img-top" src="img/blackSkull/whey900g.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Refil Whey Protein</h5>
-              <p class="card-text"> 900g
-                <br>Marca: Black Skull
+              <p class="card-text">Marca: Black Skull 
+                <br>900g
                 <br>Faixa etária: +16
                 <br>
                 <R1><strong>R$ 78,90</strong></R1>
@@ -323,8 +323,8 @@
             <img class="card-img-top" src="img/beleza/oleoCapilarEudoraSiageNutri.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Oleo Bifásico Capilar</h5>
-              <p class="card-text"> 90ml
-                <br> Marca: Eudora
+              <p class="card-text">Marca: Eudora 
+                <br> 90ml
                 <br>Faixa etária: +14
                 <br>
                 <R1><strong>R$ 47,64</strong></R1>
@@ -338,8 +338,8 @@
             <img class="card-img-top" src="img/beleza/mascaraDeTratamentoEudoraSiage.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Mascara De Tratamento</h5>
-              <p class="card-text">250g
-                <br> Marca: Eudora
+              <p class="card-text">Marca: Eudora
+                <br> 250g
                 <br>Faixa etária: +14
                 <br>
                 <R1><strong>R$ 68,99</strong></R1>
@@ -353,8 +353,8 @@
             <img class="card-img-top" src="img/beleza/serumAutoaquecimentoEudoraSiage.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Sérum Capilar Siàge Hot</h5>
-              <p class="card-text">60ml
-                <br> Marca: Eudora
+              <p class="card-text">Marca: Eudora
+                <br> 60ml
                 <br>Faixa etária: +14
                 <br>
                 <R1><strong>R$ 63,99</strong></R1>
@@ -368,8 +368,8 @@
             <img class="card-img-top" src="img/beleza/mascaraEudoraSiageCauterizacaoDosFios.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Mascara Eudora Siage</h5>
-              <p class="card-text">250g
-                <br> Marca: Natura
+              <p class="card-text">Marca: Natura
+                <br> 250g
                 <br>Faixa etária: +14
                 <br>
                 <R1><strong>R$ 67,99</strong></R1>
@@ -394,8 +394,8 @@
             <img class="card-img-top" src="img/mamaeBebe/chupetaNukSensitiveS1.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Chupeta NUK</h5>
-              <p class="card-text">Cor: Transparente
-                <br>Marca: Sensitive
+              <p class="card-text">Marca: Sensitive
+                <br>Cor: Transparente
                 <br>Faixa etária: Bebê
                 <br>
                 <R1><strong>R$ 36,90</strong></R1>
@@ -409,8 +409,8 @@
             <img class="card-img-top" src="img/mamaeBebe/absorventeParaSeiosBemCare.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Absorvente Para Seios</h5>
-              <p class="card-text"> 30 unidades
-                <br>Marca: Philips
+              <p class="card-text"> Marca: Philips
+                <br>30 unidades
                 <br>Faixa etária: Mamãe
                 <br>
                 <R1><strong>R$ 16,90</strong></R1>
@@ -424,8 +424,8 @@
             <img class="card-img-top" src="img/mamaeBebe/fraldaPampersPantsAjusteTotalTamanhoM.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Fralda Ajuste Total</h5>
-              <p class="card-text"> M 112 unidades
-                <br> Marca: Pampers
+              <p class="card-text">Marca: Pampers 
+                <br> M 112 unidades
                 <br>Faixa etária: Bebê
                 <br>
                 <R1><strong>R$ 129,99</strong></R1>
@@ -439,8 +439,8 @@
             <img class="card-img-top" src="img/mamaeBebe/lencosUmedecidosJohnsonsBabyRecemNascidoSemFragrancia.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Lenços Umedecidos</h5>
-              <p class="card-text"> 48 unidades
-                <br>Marca: Johnsons
+              <p class="card-text"> Marca: Johnsons
+                <br>48 unidades
                 <br>Faixa etária: Bebê
                 <br>
                 <R1><strong>R$ 23,39</strong></R1>
