@@ -220,8 +220,8 @@
             <img class="card-img-top" src="img/comboDesconto/higieneOral.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Kit Higiene </h5>
-              <p class="card-text">Marca: Natura
-                <br>Faixa etária: Bebê
+              <p class="card-text">Marca: Diversas
+                <br>Higiene Oral
                 <br><s>
                   <R1 class="preçoAnterior">R$ 77,50</R1>
                 </s>
