@@ -253,7 +253,7 @@
                 <br> 600ml
                 <br>Faixa etária: +16
                 <br>
-                <R1><strong>R$ 15,99</strong></R1>
+                <R1><strong>R$ 18,99</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -269,7 +269,7 @@
                 <br>+ Brinde 
                 <br>Faixa etária: +16
                 <br>
-                <R1><strong>R$ 209,90</strong></R1>
+                <R1><strong>R$ 349,70</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>

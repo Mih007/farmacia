@@ -111,7 +111,6 @@
                                 <br>Ganache de Chocolate Branco
                                 <br>45g
                                 <br>
-                                <br>
                                 <R1><strong>R$ 10,99</strong></R1>
                             </p>
                             <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
@@ -295,14 +294,14 @@
                 <div class="col-md"></div>
                 <div class="col-md">
                     <div class="card" style="width: 265px ;">
-                        <img class="card-img-top" src="img/nutriGood/chocolateCookiesCream.png" alt="Imagem de capa do card ">
+                        <img class="card-img-top" src="img/blackSkull/monstrousTestopack.png" alt="Imagem de capa do card ">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Chocolate</h5>
-                            <p class="card-text">Cookies e Cream
-                                <br>15g
-                                <br>Marca: Nutrigood
+                            <h5 class="card-title text-center">Monstrous Testopack</h5>
+                            <p class="card-text">Marca: Black Skull
+                                <br>Suplementos em comprimido
+                                <br>Sem Glúten
                                 <br>
-                                <R1><strong>R$ 4,29</strong></R1>
+                                <R1><strong>R$ 163,90</strong></R1>
                             </p>
                             <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
                         </div>
@@ -311,14 +310,13 @@
 
                 <div class="col-md">
                     <div class="card" style="width: 265px ;">
-                        <img class="card-img-top" src="img/nutriGood/cranberryComChocolate.png" alt="Imagem de capa do card ">
+                        <img class="card-img-top" src="img/blackSkull/proteinaDeLentilha.png" alt="Imagem de capa do card ">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Cranberry</h5>
-                            <p class="card-text">Coberto com Chocolate
-                                <br>25g
-                                <br>Marca: Nutrigood
+                            <h5 class="card-title text-center">Proteina Vegana</h5>
+                            <p class="card-text">Marca: Black Skull
+                                <br>Feito a base de lentilha d'água e ervilha
                                 <br>
-                                <R1><strong>R$ 5,49</strong></R1>
+                                <R1><strong>R$ 136,90</strong></R1>
                             </p>
                             <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
                         </div>
@@ -327,14 +325,14 @@
 
                 <div class="col-md">
                     <div class="card" style="width: 265px ;">
-                        <img class="card-img-top" src="img/nutriGood/kombuchaHibiscoComMaracuja.png" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/blackSkull/thermoFlame.png" alt="Imagem de capa do card">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Kombucha</h5>
-                            <p class="card-text">Hibisco com Maracujá
-                                <br> 300ml
-                                <br>Marca: Nutrigood
+                            <h5 class="card-title text-center">Thermo Flame</h5>
+                            <p class="card-text">Marca: Black Skull
+                                <br>Suplemento de cafeína
+                                <br>Em comprimido
                                 <br>
-                                <R1><strong>R$ 8,99</strong></R1>
+                                <R1><strong>R$ 37,20</strong></R1>
                             </p>
                             <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
                         </div>
@@ -342,14 +340,14 @@
                 </div>
                 <div class="col-md">
                     <div class="card" style="width: 265px ;">
-                        <img class="card-img-top" src="img/nutriGood/kombuchaUvaVerdeComHortela.png" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/blackSkull/whey3HdGoumertFlorestaNegra1800g.png" alt="Imagem de capa do card">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Kombucha</h5>
-                            <p class="card-text">Uva Verde com Hortelã
-                                <br>300ml
-                                <br>Marca: Nutrigood
+                            <h5 class="card-title text-center">Whey</h5>
+                            <p class="card-text">Marca: Black Skull
+                                <br>Floresta Negra
+                                <br>1.8kg
                                 <br>
-                                <R1><strong>R$ 8,99</strong></R1>
+                                <R1><strong>R$ 340,00</strong></R1>
                             </p>
                             <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
                         </div>
@@ -369,14 +367,14 @@
                 <div class="col-md"></div>
                 <div class="col-md">
                     <div class="card" style="width: 265px ;">
-                        <img class="card-img-top" src="img/nutriGood/pipocaSalgadaComToquedeAzeite.png" alt="Imagem de capa do card ">
+                        <img class="card-img-top" src="img/blackSkull/whey3HdGoumertGarrafaDoseUnicaFlorestaNegra30g.png" alt="Imagem de capa do card ">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Pipoca</h5>
-                            <p class="card-text">Sem Glúten
-                                <br>20g
-                                <br>Marca: Nutrigood
+                            <h5 class="card-title text-center">Whey</h5>
+                            <p class="card-text">Marca: Black Skull
+                                <br>Floresta Negra
+                                <br>30g
                                 <br>
-                                <R1><strong>R$ 8,29</strong></R1>
+                                <R1><strong>R$ 16,90</strong></R1>
                             </p>
                             <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
                         </div>
@@ -385,14 +383,14 @@
 
                 <div class="col-md">
                     <div class="card" style="width: 265px ;">
-                        <img class="card-img-top" src="img/nutriGood/sucoDeLaranja.png" alt="Imagem de capa do card ">
+                        <img class="card-img-top" src="img/blackSkull/whey3HdGoumertSorveteDeFlocos900g.png" alt="Imagem de capa do card ">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Suco</h5>
-                            <p class="card-text">Laranja
-                                <br>250ml
-                                <br>Marca: Nutrigood
+                        <h5 class="card-title text-center">Whey</h5>
+                            <p class="card-text">Marca: Black Skull
+                                <br>Sorvete de flocos
+                                <br>900g
                                 <br>
-                                <R1><strong>R$ 5,99</strong></R1>
+                                <R1><strong>R$ 169,90</strong></R1>
                             </p>
                             <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
                         </div>
@@ -401,14 +399,14 @@
 
                 <div class="col-md">
                     <div class="card" style="width: 265px ;">
-                        <img class="card-img-top" src="img/nutriGood/sucoDeUva.png" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/blackSkull/whey900g.png" alt="Imagem de capa do card">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Suco</h5>
-                            <p class="card-text">Uva
-                                <br> 250ml
-                                <br>Marca: Nutrigood
+                        <h5 class="card-title text-center">Whey</h5>
+                            <p class="card-text">Marca: Black Skull
+                                <br>Tradicional
+                                <br>900g
                                 <br>
-                                <R1><strong>R$ 5,99</strong></R1>
+                                <R1><strong>R$ 78,90</strong></R1>
                             </p>
                             <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
                         </div>
@@ -416,14 +414,14 @@
                 </div>
                 <div class="col-md">
                     <div class="card" style="width: 265px ;">
-                        <img class="card-img-top" src="img/nutriGood/sucoDeUvaInfantil.png" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/blackSkull/wheyZeroLactose900g.png" alt="Imagem de capa do card">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Suco Kids</h5>
-                            <p class="card-text">Uva
-                                <br>200ml
-                                <br>Marca: Nutrigood
+                        <h5 class="card-title text-center">Whey</h5>
+                            <p class="card-text">Marca: Black Skull
+                                <br>Zero lactose
+                                <br>900g
                                 <br>
-                                <R1><strong>R$ 5,99</strong></R1>
+                                <R1><strong>R$ 299,90</strong></R1>
                             </p>
                             <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
                         </div>
