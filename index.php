@@ -81,7 +81,7 @@
             <a href="blackSkull.php"> <img class="d-block w-100" src="img/slides/suplementosSlides.png" alt="Quarto Slide"> </a>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/slides/belezaLorealSlides.png" alt="Quinto Slide">
+            <a href="loreal.php">  <img class="d-block w-100" src="img/slides/belezaLorealSlides.png" alt="Quinto Slide"> </a>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="img/slides/leveMpagueMSlides.png" alt="Sexto Slide">
