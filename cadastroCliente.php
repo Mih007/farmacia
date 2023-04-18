@@ -8,20 +8,20 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/formularioCliente.css">
   <link rel="icon" href="img/logos/logoPanaceiaGoogle.png">
-  <title>Farmacia Panaceia | 24h Online</title>
+  <title>Farmacia Panaceia | Cadastre-se</title>
 </head>
 
 
-<body style="background-color: ghostwhite;">
+<body background="img\fundoCliente.png">
   <!--NAV-->
 
   <section>
     <div class="container-fluit fixed-top menuInicio text-center" style="background-color: #FFFFFF;">
       <div class="row">
         <nav class="navbar navbar-expand-lg navbar bg">
-          <a class="navbar-brand logoMenu" style="margin-left: 200px;" href="index.php"><img src="img/logos/logoPanaceia.png" width="150" height="80" alt=""></a>
+          <a class="navbar-brand logoMenu" style="margin-left: 200px;" href="index.php"><img src="img/logos/logoPanaceia.png" width="100" height="50" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -36,10 +36,10 @@
 
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="cadastrese.php" style="margin-left: 400px;"><img src="img/menu/user.png" alt="" width="50" height="50"></a>
+                <a class="nav-link" href="cadastrese.php" style="margin-left: 400px;"><img src="img/menu/user.png" alt="" width="45" height="45"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style="margin-left: 80px;"><img src="img/menu/carrinhoVerde.png" alt="" width="50" height="50"></a>
+                <a class="nav-link" href="#" style="margin-left: 80px;"><img src="img/menu/carrinhoVerde.png" alt="" width="45" height="45"></a>
               </li>
             </ul>
 
@@ -51,9 +51,12 @@
 
   
 
-  <section>
-        <div class="container tamanhoFormulario">
-        <br><br><br><br><br><br><br>
+  <section class="tamanhoFormulario">
+        <div class="container ">
+         <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md">
+          <br><br><br><br><br><br><br>
             <form action="inserirCliente.php" method="POST">
                 <h3 style="text-align: center">Cadastro do Clientes</h3>
                 <div class="form-group">
@@ -66,15 +69,15 @@
                 </div>
                 <div class="form-group">
                     <label>Senha</label>
-                    <input type="password" class="form-control" name="senha" placeholder="escolha uma senha" required>
+                    <input type="password" class="form-control" name="senha" placeholder="Escolha sua senha" required>
                 </div>
                 <div class="button">
-                    <button type="submit" class="btn btn-secondary button">Cadastrar</button>
+                <button type="button" style="width: 225px ;" class="btn btn-outline-success">Cadastrar </button>
                 </div>
-                <div class="col-md">
-               <a href="listarCliente.php"><button type="button" style="width: 225px ;" class="btn btn-outline-success">Listra </button></a>
-            </div>
             </form>
+          </div>
+          <div class="col-md-2"></div>
+         </div>
         </div>
   </section>
 
