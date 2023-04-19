@@ -78,7 +78,7 @@
               <img class="d-block w-100" src="img/slides/freteGratisSlides.png" alt="Terceiro Slide">
             </div>
             <div class="carousel-item ">
-            <a href="blackSkull.php"> <img class="d-block w-100" src="img/slides/suplementosSlides.png" alt="Quarto Slide"> </a>
+              <a href="blackSkull.php"> <img class="d-block w-100" src="img/slides/suplementosSlides.png" alt="Quarto Slide"> </a>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="img/slides/belezaLorealSlides.png" alt="Quinto Slide">
@@ -249,7 +249,7 @@
             <img class="card-img-top" src="img/blackSkull/coqueteleira.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Coqueteleira</h5>
-              <p class="card-text">Marca: Black Skull 
+              <p class="card-text">Marca: Black Skull
                 <br> 600ml
                 <br>Faixa etária: +16
                 <br>
@@ -266,7 +266,7 @@
             <div class="card-body">
               <h5 class="card-title text-center">Kit Black Skull</h5>
               <p class="card-text"> Marca: Black Skull
-                <br>+ Brinde 
+                <br>+ Brinde
                 <br>Faixa etária: +16
                 <br>
                 <R1><strong>R$ 349,70</strong></R1>
@@ -282,7 +282,7 @@
             <div class="card-body">
               <h5 class="card-title text-center">Thermo Flame</h5>
               <p class="card-text"> Marca: Black Skull
-                <br>60 Tabletes 
+                <br>60 Tabletes
                 <br>Faixa etária: +16
                 <br>
                 <R1><strong>R$ 37,20</strong></R1>
@@ -297,7 +297,7 @@
             <img class="card-img-top" src="img/blackSkull/whey900g.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Refil Whey Protein</h5>
-              <p class="card-text">Marca: Black Skull 
+              <p class="card-text">Marca: Black Skull
                 <br>900g
                 <br>Faixa etária: +16
                 <br>
@@ -323,7 +323,7 @@
             <img class="card-img-top" src="img/beleza/oleoCapilarEudoraSiageNutri.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Oleo Bifásico Capilar</h5>
-              <p class="card-text">Marca: Eudora 
+              <p class="card-text">Marca: Eudora
                 <br> 90ml
                 <br>Faixa etária: +14
                 <br>
@@ -424,7 +424,7 @@
             <img class="card-img-top" src="img/mamaeBebe/fraldaPampersPantsAjusteTotalTamanhoM.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title text-center">Fralda Ajuste Total</h5>
-              <p class="card-text">Marca: Pampers 
+              <p class="card-text">Marca: Pampers
                 <br> M 112 unidades
                 <br>Faixa etária: Bebê
                 <br>
@@ -455,41 +455,41 @@
   </section>
 
   <footer class="border-top text-muted bg">
-            <div class="container">
-                <div class="row py-3">
-                    <div class="col-12 col-md-4 text-center">
-                        2020 - Quitanda Online Ltda ME<br>
-                        Rua Virtual Inexistente, 171, Compulândia/PC <br>
-                        CPNJ 99.999.999/0001-99
-                    </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <a href="/privacidade.html" class="text-decoration-none text-dark">
-                            Política de Privacidade
-                        </a><br>
-                        <a href="/termos.html" class="text-decoration-none text-dark">
-                            Termos de Uso
-                        </a><br>
-                        <a href="/quemsomos.html" class="text-decoration-none text-dark">
-                            Quem Somos
-                        </a><br>
-                        <a href="/trocas.html" class="text-decoration-none text-dark">
-                            Trocas e Devoluções
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <a href="/contato.html" class="text-decoration-none text-dark">
-                            Contato pelo Site
-                        </a><br>
-                            E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
-                            email@dominio.com
-                        </a><br>
-                            Telefone: <a href="phone:28999990000" class="text-decoration-none text-dark">
-                            (28) 99999-0000
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <div class="container-fluit">
+      <div class="row py-3">
+        <div class="col-md-4 text-center">
+          <p>2023 - Farmacia Panaceia Online Ltda ME<br>
+            Rua Virtual Inexistente, 171, Compulândia/PT <br>
+            CPNJ 99.999.999/0001-99</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="/privacidade.html" class="text-decoration-none text-dark">
+            Política de Privacidade
+          </a><br>
+          <a href="/termos.html" class="text-decoration-none text-dark">
+            Termos de Uso
+          </a><br>
+          <a href="/quemsomos.html" class="text-decoration-none text-dark">
+            Quem Somos
+          </a><br>
+          <a href="/trocas.html" class="text-decoration-none text-dark">
+            Trocas e Devoluções
+          </a>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="/contato.html" class="text-decoration-none text-dark">
+            Contato pelo Site
+          </a><br>
+          <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
+            E-mail: email@dominio.com
+          </a><br>
+          <a href="phone:28999990000" class="text-decoration-none text-dark">
+            Telefone: (34) 99899-0000
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
