@@ -409,7 +409,7 @@
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="card" style="width: 265px ;">
+                    <div class="card" style="width: 265px ;">                                                              
                         <img class="card-img-top" src="img/lorelParis/shampooHidraHilauronico.png" alt="Imagem de capa do card">
                         <div class="card-body">
                             <h5 class="card-title text-center">Shampoo</h5>
