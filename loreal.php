@@ -122,7 +122,7 @@
                         <div class="card-body">
                             <h5 class="card-title text-center">Kit Liso dos Sonhos</h5>
                             <p class="card-text">Marca: L'oréal
-                            <br>Produtos para cabelo
+                                <br>Produtos para cabelo
                                 <br>Faixa etária: +14
                                 <br>
                                 <R1><strong>R$ 38,99</strong></R1>
@@ -139,6 +139,369 @@
 
     <br><br><br>
 
+
+    <section>
+        <div class="container-fluit  ">
+            <div class="row ">
+                <div class="col-md"></div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/kitProfessionnelCurlExpression.png" alt="Imagem de capa do card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Kit Professionnel Curl</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>Produtos para cabelo Professionel Curl Expression
+                                <br>
+                                <R1><strong>R$ 466,93</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/baseAccordParfait2w.png" alt="Imagem de capa do card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Base Accord Parfait</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>Produto para pele
+                                <br>Tom: 2w
+                                <br>
+                                <R1><strong>R$ 142,10</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/baseTrueMatch1NIvory.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Base True Match</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>Produto para pele
+                                <br>Tom: 1N
+                                <br>
+                                <R1><strong>R$ 142,10</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/baseTrueMatch8N.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Base True Match</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>Produto para pele
+                                <br>Tom: 8N
+                                <br>
+                                <R1><strong>R$ 142,10</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md"></div>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <section>
+        <div class="container-fluit  ">
+            <div class="row ">
+                <div class="col-md"></div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/cremeDePentearAntiCorte.png" alt="Imagem de capa do card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Creme de Pentear</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>250ml
+                                <br>Anti-corte
+                                <br>
+                                <R1><strong>R$ 24,78</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/CremeDePentearExterminaFrizz.png" alt="Imagem de capa do card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Creme de Pentear</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>250ml
+                                <br>Extermina Frizz
+                                <br>
+                                <R1><strong>R$ 12,39</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/cremeDeTratamentoOleoDeCoco.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Creme de Tratamento</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>300ml
+                                <br>Óleo de coco
+                                <br>
+                                <R1><strong>R$ 21,40</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/cremeDeTratamentoOleoDeFlores.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Creme de Tratamento</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>300ml
+                                <br>Óleo de flores
+                                <br>
+                                <R1><strong>R$ 22,49</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md"></div>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <section>
+        <div class="container-fluit  ">
+            <div class="row ">
+                <div class="col-md"></div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/cremeHidraHilauronico.png" alt="Imagem de capa do card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Creme Preenchedor</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>250ml
+                                <br>Ácido Hialurônico
+                                <br>
+                                <R1><strong>R$ 12,90</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/hidraTotal5.png" alt="Imagem de capa do card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Hidra Total 5</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>50ml
+                                <br>Creme anti-arrugas 35+
+                                <br>
+                                <R1><strong>R$ 109,00</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/leaveInDeTratamento.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Creme de Tratamento</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>50ml
+                                <br>Proteção térmica
+                                <br>
+                                <R1><strong>R$ 17,90</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/mascaraIntensivaHidraHilauronico.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Máscara Intensiva</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>300ml
+                                <br>Ácido Hialurônico
+                                <br>
+                                <R1><strong>R$ 19,92</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md"></div>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <section>
+        <div class="container-fluit  ">
+            <div class="row ">
+                <div class="col-md"></div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/mascaraReparadora.png" alt="Imagem de capa do card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Máscara Reparadora</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>300ml
+                                <br>Total Repair 5
+                                <br>
+                                <R1><strong>R$ 55,50</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/oleoSerum.png" alt="Imagem de capa do card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Óleo Serum</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>100ml
+                                <br>Óleo de flores
+                                <br>
+                                <R1><strong>R$ 39,90</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/protetorSolarUvDefender.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Protetor Solar</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>40ml
+                                <br>UV defender
+                                <br>
+                                <R1><strong>R$ 64,80</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 265px ;">
+                        <img class="card-img-top" src="img/lorelParis/shampooHidraHilauronico.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Shampoo</h5>
+                            <p class="card-text">Marca: L'oréal
+                                <br>400ml
+                                <br>Ácido Hialurônico
+                                <br>
+                                <R1><strong>R$ 17,90</strong></R1>
+                            </p>
+                            <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="border-top text-muted bg">
+
+        <div class="container-fluit">
+
+            <div class="row py-3">
+
+                <div class="col-md-4 text-center">
+
+                    <p>2023 - Farmacia Panaceia Online Ltda ME<br>
+
+                        Rua Virtual Inexistente, 171, Compulândia/PT <br>
+
+                        CPNJ 99.999.999/0001-99</p>
+
+                </div>
+
+                <div class="col-md-4 text-center">
+
+                    <a href="/privacidade.html" class="text-decoration-none text-dark">
+
+                        Política de Privacidade
+
+                    </a><br>
+
+                    <a href="/termos.html" class="text-decoration-none text-dark">
+
+                        Termos de Uso
+
+                    </a><br>
+
+                    <a href="/quemsomos.html" class="text-decoration-none text-dark">
+
+                        Quem Somos
+
+                    </a><br>
+
+                    <a href="/trocas.html" class="text-decoration-none text-dark">
+
+                        Trocas e Devoluções
+
+                    </a>
+
+                </div>
+
+                <div class="col-md-4 text-center">
+
+                    <a href="/contato.html" class="text-decoration-none text-dark">
+
+                        Contato pelo Site
+
+                    </a><br>
+
+                    <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
+
+                        E-mail: email@dominio.com
+
+                    </a><br>
+
+                    <a href="phone:28999990000" class="text-decoration-none text-dark">
+
+                        Telefone: (34) 99899-0000
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 
 
