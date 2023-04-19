@@ -34,7 +34,7 @@
 
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="cadastrese.php" style="margin-left: 400px;"><img src="img/menu/user.png" alt="" width="50" height="50"></a>
+                <a class="nav-link" href="cadastroCliente.php" style="margin-left: 400px;"><img src="img/menu/user.png" alt="" width="50" height="50"></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" style="margin-left: 80px;"><img src="img/menu/carrinhoVerde.png" alt="" width="50" height="50"></a>
@@ -453,6 +453,43 @@
       </div>
     </div>
   </section>
+
+  <footer class="border-top text-muted bg">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center">
+                        2020 - Quitanda Online Ltda ME<br>
+                        Rua Virtual Inexistente, 171, Compulândia/PC <br>
+                        CPNJ 99.999.999/0001-99
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="/privacidade.html" class="text-decoration-none text-dark">
+                            Política de Privacidade
+                        </a><br>
+                        <a href="/termos.html" class="text-decoration-none text-dark">
+                            Termos de Uso
+                        </a><br>
+                        <a href="/quemsomos.html" class="text-decoration-none text-dark">
+                            Quem Somos
+                        </a><br>
+                        <a href="/trocas.html" class="text-decoration-none text-dark">
+                            Trocas e Devoluções
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="/contato.html" class="text-decoration-none text-dark">
+                            Contato pelo Site
+                        </a><br>
+                            E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
+                            email@dominio.com
+                        </a><br>
+                            Telefone: <a href="phone:28999990000" class="text-decoration-none text-dark">
+                            (28) 99999-0000
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
 
