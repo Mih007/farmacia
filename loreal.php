@@ -33,13 +33,14 @@
 
 
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="cadastrese.php" style="margin-left: 400px;"><img src="img/menu/user.png" alt="" width="50" height="50"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" style="margin-left: 80px;"><img src="img/menu/carrinhoVerde.png" alt="" width="50" height="50"></a>
-                            </li>
-                        </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="cadastroCliente.php" style="margin-left: 400px;"><img src="img/menu/user.png" alt="" width="50" height="50"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="margin-left: 80px;"><img src="img/menu/carrinhoVerde.png" alt="" width="50" height="50"></a>
+              </li>
+            </ul>
+
 
                     </div>
                 </nav>
