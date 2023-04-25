@@ -81,7 +81,7 @@
               <a href="blackSkull.php"> <img class="d-block w-100" src="img/slides/suplementosSlides.png" alt="Quarto Slide"> </a>
             </div>
             <div class="carousel-item">
-            <a href="loreal.php">  <img class="d-block w-100" src="img/slides/belezaLorealSlides.png" alt="Quinto Slide"> </a>
+              <a href="loreal.php"> <img class="d-block w-100" src="img/slides/belezaLorealSlides.png" alt="Quinto Slide"> </a>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="img/slides/leveMpagueMSlides.png" alt="Sexto Slide">
@@ -90,7 +90,7 @@
               <img class="d-block w-100" src="img/slides/novaNoiteSlides.png" alt="Setimo Slide">
             </div>
             <div class="carousel-item">
-              <a href="nutren.php"> <img class="d-block w-100" src="img/slides/nutrenSlides.png" alt="Oitvavo Slide"> </a> 
+              <a href="nutren.php"> <img class="d-block w-100" src="img/slides/nutrenSlides.png" alt="Oitvavo Slide"> </a>
             </div>
             <div class="carousel-item">
               <a href="needs.php"> <img class="d-block w-100" src="img/slides/produtosNeedsSlides.png" alt="Nono Slide"> </a> 
@@ -157,23 +157,39 @@
   </section>
 
   <br><br><br><br><br>
+  <?php
+    
+    $mysqli = new mysqli("localhost", "root", "root", "farmaciapanaceia"); // Conexão com o banco de dados
+
+    for ($i=1; $i < 10; $i++) {
+      if ($mysqli->connect_error) { //Verifica se houve erro na conexão
+        die("Erro na conexão: " . $mysqli->connect_error); 
+      }
+      $query = "SELECT nomeProduto, valorUnidade FROM produto WHERE idProduto = $i"; // Query para buscar um registro da tabela 'produto'
+      $resultado[$i] = $mysqli->query($query); // Executa a query
+      $registro[$i] = $resultado[$i]->fetch_assoc(); // Obtém o registro retornado pela query
+      
+    }
+
+
+    ?>
 
   <section>
     <div class="container-fluit comboDescInicio ">
       <div class="row ">
         <div class="col-md"></div>
         <div class="col-md">
-          <div class="card" style="width: 265px ;">
+          <div class="card" style="width: 265px ;" >
             <img class="card-img-top" src="img/comboDesconto/sabonete.png" alt="Imagem de capa do card ">
             <div class="card-body">
-              <h5 class="card-title text-center">Kit Mamãe e Bebê</h5>
+              <h5 class="card-title text-center"><?php echo $registro[1]["nomeProduto"]  ?> </h5>
               <p class="card-text">Marca: Natura
                 <br>Produtos para pele
                 <br><s>
                   <R1 class="preçoAnterior">R$ 59,80</R1>
                 </s>
                 <br>
-                <R1><strong>R$ 41,86</strong></R1>
+                <R1><strong><?php echo $registro[1]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -184,14 +200,14 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/comboDesconto/mamaeEbebe.png" alt="Imagem de capa do card ">
             <div class="card-body">
-              <h5 class="card-title text-center">Kit Mamãe e Bebê</h5>
+              <h5 class="card-title text-center"><?php echo $registro[2]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Natura
                 <br>Produtos para cabelo e pele
                 <br><s>
                   <R1 class="preçoAnterior">R$ 407,80</R1>
                 </s>
                 <br>
-                <R1><strong>R$ 346,63</strong></R1>
+                <R1><strong><?php echo $registro[2]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -202,14 +218,14 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/comboDesconto/cabelo.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Kit Dermocosmeticos</h5>
+              <h5 class="card-title text-center"><?php echo $registro[3]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Diversas
                 <br>Produtos para cabelo
                 <br><s>
                   <R1 class="preçoAnterior">R$ 108,10</R1>
                 </s>
                 <br>
-                <R1><strong>R$ 70,27</strong></R1>
+                <R1><strong><?php echo $registro[3]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -219,24 +235,24 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/comboDesconto/higieneOral.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Kit Higiene </h5>
+              <h5 class="card-title text-center"><?php echo $registro[4]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Diversas
                 <br>Higiene Oral
                 <br><s>
                   <R1 class="preçoAnterior">R$ 77,50</R1>
                 </s>
                 <br>
-                <R1><strong>R$ 66,25</strong></R1>
+                <R1><strong><?php echo $registro[4]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
           </div>
         </div>
-
         <div class="col-md"></div>
       </div>
     </div>
   </section>
+
 
   <br><br><br>
 
@@ -248,7 +264,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/blackSkull/coqueteleira.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Coqueteleira</h5>
+              <h5 class="card-title text-center"><?php echo $registro[5]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Black Skull
                 <br> 600ml
                 <br>Faixa etária: +16
@@ -264,7 +280,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/blackSkull/kitBS.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Kit Black Skull</h5>
+              <h5 class="card-title text-center"><?php echo $registro[6]["nomeProduto"]  ?></h5>
               <p class="card-text"> Marca: Black Skull
                 <br>+ Brinde
                 <br>Faixa etária: +16
@@ -280,12 +296,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/blackSkull/thermoFlame.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Thermo Flame</h5>
+              <h5 class="card-title text-center"><?php echo $registro[7]["nomeProduto"] ?></h5>
               <p class="card-text"> Marca: Black Skull
                 <br>60 Tabletes
                 <br>Faixa etária: +16
                 <br>
-                <R1><strong>R$ 37,20</strong></R1>
+                <R1><strong><?php echo $registro[7]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -296,12 +312,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/blackSkull/whey900g.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Refil Whey Protein</h5>
+              <h5 class="card-title text-center"><?php echo $registro[8]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Black Skull
                 <br>900g
                 <br>Faixa etária: +16
                 <br>
-                <R1><strong>R$ 78,90</strong></R1>
+                <R1><strong><?php echo $registro[8]["valorUnidade"]?>0</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -320,14 +336,14 @@
         <div class="col-md"></div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/beleza/oleoCapilarEudoraSiageNutri.png" alt="Imagem de capa do card">
+            <img class="card-img-top" src="img/beleza/revitaliftHialuronico.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Oleo Bifásico Capilar</h5>
-              <p class="card-text">Marca: Eudora
-                <br> 90ml
-                <br>Faixa etária: +14
+              <h5 class="card-title text-center">Revitalift Hialurônico</h5>
+              <p class="card-text">Marca: Loreal
+                <br> 30 ml
+                <br>Serúm preenchedor
                 <br>
-                <R1><strong>R$ 47,64</strong></R1>
+                <R1><strong>R$ 129,97</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -335,14 +351,14 @@
         </div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/beleza/mascaraDeTratamentoEudoraSiage.png" alt="Imagem de capa do card">
+            <img class="card-img-top" src="img/beleza/neovadiol.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Mascara De Tratamento</h5>
-              <p class="card-text">Marca: Eudora
-                <br> 250g
-                <br>Faixa etária: +14
+              <h5 class="card-title text-center">Neovadiol</h5>
+              <p class="card-text">Marca: Vichy
+                <br> 50 g
+                <br>Creme efeito lifting
                 <br>
-                <R1><strong>R$ 68,99</strong></R1>
+                <R1><strong>R$ 303,35</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -350,14 +366,14 @@
         </div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/beleza/serumAutoaquecimentoEudoraSiage.png" alt="Imagem de capa do card">
+            <img class="card-img-top" src="img/beleza/skinceuticalsGlycolic.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Sérum Capilar Siàge Hot</h5>
-              <p class="card-text">Marca: Eudora
-                <br> 60ml
-                <br>Faixa etária: +14
+              <h5 class="card-title text-center">Skinceuticals Glycolic</h5>
+              <p class="card-text">Marca: Skinceuticals
+                <br> 50 ml
+                <br>Promove brilho da pele
                 <br>
-                <R1><strong>R$ 63,99</strong></R1>
+                <R1><strong>R$ 556,08</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -365,14 +381,14 @@
         </div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/beleza/mascaraEudoraSiageCauterizacaoDosFios.png" alt="Imagem de capa do card">
+            <img class="card-img-top" src="img/beleza/gelCremeRedutor.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Mascara Eudora Siage</h5>
-              <p class="card-text">Marca: Natura
-                <br> 250g
-                <br>Faixa etária: +14
+              <h5 class="card-title text-center">Gel-Creme Redutor</h5>
+              <p class="card-text">Marca: Hidrabene
+                <br> 200 g
+                <br>Gel-creme redutor de medidas
                 <br>
-                <R1><strong>R$ 67,99</strong></R1>
+                <R1><strong>R$ 70,79</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -452,56 +468,55 @@
         <div class="col-md"></div>
       </div>
     </div>
-  </section>
 
-  <footer class="border-top text-muted bg">
-    <div class="container-fluit">
-      <div class="row py-3">
-        <div class="col-md-4 text-center">
-          <p>2023 - Farmacia Panaceia Online Ltda ME<br>
-            Rua Virtual Inexistente, 171, Compulândia/PT <br>
-            CPNJ 99.999.999/0001-99</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <a href="/privacidade.html" class="text-decoration-none text-dark">
-            Política de Privacidade
-          </a><br>
-          <a href="/termos.html" class="text-decoration-none text-dark">
-            Termos de Uso
-          </a><br>
-          <a href="/quemsomos.html" class="text-decoration-none text-dark">
-            Quem Somos
-          </a><br>
-          <a href="/trocas.html" class="text-decoration-none text-dark">
-            Trocas e Devoluções
-          </a>
-        </div>
-        <div class="col-md-4 text-center">
-          <a href="/contato.html" class="text-decoration-none text-dark">
-            Contato pelo Site
-          </a><br>
-          <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
-            E-mail: email@dominio.com
-          </a><br>
-          <a href="phone:28999990000" class="text-decoration-none text-dark">
-            Telefone: (34) 99899-0000
-          </a>
+    <footer class="border-top text-muted bg">
+      <div class="container-fluit">
+        <div class="row py-3">
+          <div class="col-md-4 text-center">
+            <p>2023 - Farmacia Panaceia Online Ltda ME<br>
+              Rua Virtual Inexistente, 171, Compulândia/PT <br>
+              CPNJ 99.999.999/0001-99</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="/privacidade.html" class="text-decoration-none text-dark">
+              Política de Privacidade
+            </a><br>
+            <a href="/termos.html" class="text-decoration-none text-dark">
+              Termos de Uso
+            </a><br>
+            <a href="/quemsomos.html" class="text-decoration-none text-dark">
+              Quem Somos
+            </a><br>
+            <a href="/trocas.html" class="text-decoration-none text-dark">
+              Trocas e Devoluções
+            </a>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="/contato.html" class="text-decoration-none text-dark">
+              Contato pelo Site
+            </a><br>
+            <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
+              E-mail: email@dominio.com
+            </a><br>
+            <a href="phone:28999990000" class="text-decoration-none text-dark">
+              Telefone: (34) 99899-0000
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
 
