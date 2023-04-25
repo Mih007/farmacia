@@ -336,14 +336,14 @@
         <div class="col-md"></div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/beleza/oleoCapilarEudoraSiageNutri.png" alt="Imagem de capa do card">
+            <img class="card-img-top" src="img/beleza/revitaliftHialuronico.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Oleo Bifásico Capilar</h5>
-              <p class="card-text">Marca: Eudora
-                <br> 90ml
-                <br>Faixa etária: +14
+              <h5 class="card-title text-center">Revitalift Hialurônico</h5>
+              <p class="card-text">Marca: Loreal
+                <br> 30 ml
+                <br>Serúm preenchedor
                 <br>
-                <R1><strong>R$ 47,64</strong></R1>
+                <R1><strong>R$ 129,97</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -351,14 +351,14 @@
         </div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/beleza/mascaraDeTratamentoEudoraSiage.png" alt="Imagem de capa do card">
+            <img class="card-img-top" src="img/beleza/neovadiol.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Mascara De Tratamento</h5>
-              <p class="card-text">Marca: Eudora
-                <br> 250g
-                <br>Faixa etária: +14
+              <h5 class="card-title text-center">Neovadiol</h5>
+              <p class="card-text">Marca: Vichy
+                <br> 50 g
+                <br>Creme efeito lifting
                 <br>
-                <R1><strong>R$ 68,99</strong></R1>
+                <R1><strong>R$ 303,35</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -366,14 +366,14 @@
         </div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/beleza/serumAutoaquecimentoEudoraSiage.png" alt="Imagem de capa do card">
+            <img class="card-img-top" src="img/beleza/skinceuticalsGlycolic.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Sérum Capilar Siàge Hot</h5>
-              <p class="card-text">Marca: Eudora
-                <br> 60ml
-                <br>Faixa etária: +14
+              <h5 class="card-title text-center">Skinceuticals Glycolic</h5>
+              <p class="card-text">Marca: Skinceuticals
+                <br> 50 ml
+                <br>Promove brilho da pele
                 <br>
-                <R1><strong>R$ 63,99</strong></R1>
+                <R1><strong>R$ 556,08</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -381,14 +381,14 @@
         </div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/beleza/mascaraEudoraSiageCauterizacaoDosFios.png" alt="Imagem de capa do card">
+            <img class="card-img-top" src="img/beleza/gelCremeRedutor.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Mascara Eudora Siage</h5>
-              <p class="card-text">Marca: Natura
-                <br> 250g
-                <br>Faixa etária: +14
+              <h5 class="card-title text-center">Gel-Creme Redutor</h5>
+              <p class="card-text">Marca: Hidrabene
+                <br> 200 g
+                <br>Gel-creme redutor de medidas
                 <br>
-                <R1><strong>R$ 67,99</strong></R1>
+                <R1><strong>R$ 70,79</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
