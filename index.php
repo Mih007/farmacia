@@ -93,7 +93,7 @@
               <a href="nutren.php"> <img class="d-block w-100" src="img/slides/nutrenSlides.png" alt="Oitvavo Slide"> </a> 
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/slides/produtosNeedsSlides.png" alt="Nono Slide">
+              <a href="needs.php"> <img class="d-block w-100" src="img/slides/produtosNeedsSlides.png" alt="Nono Slide"> </a> 
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="img/slides/powerChaiSlides.png" alt="Decimo Slide">
