@@ -48,6 +48,21 @@
 
   <br><br><br><br><br><br><br><br>
 
+  <?php
+
+$mysqli = new mysqli("localhost", "root", "", "farmaciapanaceia"); // Conexão com o banco de dados
+for ($i = 0; $i < 118; $i++) {
+  if ($mysqli->connect_error) { //Verifica se houve erro na conexão
+    die("Erro na conexão: " . $mysqli->connect_error);
+  }
+  $query = "SELECT nomeProduto, valorUnidade FROM produto WHERE idProduto = $i"; // Query para buscar um registro da tabela 'produto'
+  $resultado[$i] = $mysqli->query($query); // Executa a query
+  $registro[$i] = $resultado[$i]->fetch_assoc(); // Obtém o registro retornado pela query
+
+}
+
+?>
+
   <section>
     <div class="container-fluid">
       <div class="row">
@@ -56,12 +71,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/prendedorChupeta.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Prendedor de Chupeta</h5>
+              <h5 class="card-title text-center"> <?php echo $registro[98]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: MAM
                 <br>01 unidade 
                 <br>Cor: Azul
                 <br>
-                <R1><strong>R$ 54,19</strong></R1>
+                <R1><strong>R$ <?php echo $registro[98]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -71,7 +86,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/aspiradorNasal.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Aspirador Nasal</h5>
+              <h5 class="card-title text-center"><?php echo $registro[99]["nomeProduto"]  ?> </h5>
               <p class="card-text">Marca: Nose Frida
                 <br>01 unidade
                 <br>Aspirador de fluidos nasais
@@ -86,7 +101,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/copoAvent.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Copo com bico</h5>
+              <h5 class="card-title text-center"><?php echo $registro[100]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Avent
                 <br>260 ml
                 <br>Cor: rosa
@@ -101,7 +116,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/nanAr.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Fórmula Infantil</h5>
+              <h5 class="card-title text-center"><?php echo $registro[101]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Nan Ar
                 <br>800 g
                 <br>Faixa etária: 0 a 12 meses
@@ -127,7 +142,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/tesouraNuk.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Tesoura Infantil</h5>
+              <h5 class="card-title text-center"> <?php echo $registro[102]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Nuk
                 <br>01 unidade
                 <br>tesoura para cortar unhas
@@ -142,7 +157,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/talcoGranado.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Talco Granado</h5>
+              <h5 class="card-title text-center"> <?php echo $registro[103]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Casa Granado
                 <br>100 g
                 <br>Previne assaduras
@@ -157,7 +172,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/oleoJohnsons.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Óleo Johnsons Baby</h5>
+              <h5 class="card-title text-center"><?php echo $registro[104]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Johnsons & Johnsons
                 <br>200 ml
                 <br>Ajuda a dormir mais rápido
@@ -172,7 +187,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/compressasRefrescantes.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Compressas</h5>
+              <h5 class="card-title text-center"><?php echo $registro[105]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Fever Friends
                 <br>04 unidades
                 <br>Compressas refrescantes
@@ -198,7 +213,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/saboneteJohnsons.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Sabonete Johnsons</h5>
+              <h5 class="card-title text-center"><?php echo $registro[106]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Johnsons & Johnsons
                 <br>80 g
                 <br>Johnsons Baby glicerina
@@ -213,7 +228,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/nestogeno.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Nestogeno 1</h5>
+              <h5 class="card-title text-center"><?php echo $registro[107]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Nestle
                 <br>400 g
                 <br>Fórmula infantil para lactentes
@@ -228,7 +243,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/cremeParaPentear.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Creme para pentear</h5>
+              <h5 class="card-title text-center"><?php echo $registro[108]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Johnsons & Johnsons
                 <br>200 ml
                 <br>Cachos dos sonhos
@@ -243,7 +258,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/bepantolBaby.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Bepantol Baby</h5>
+              <h5 class="card-title text-center"><?php echo $registro[109]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Bayer
                 <br>30 g
                 <br>Creme de Assaduras
@@ -269,7 +284,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/saboneteLiquidoJohnsons.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Sabonete Líquido</h5>
+              <h5 class="card-title text-center"><?php echo $registro[110]["nomeProduto"]  ?> </h5>
               <p class="card-text">Marca: Johnsons & Johnsons
                 <br>400 ml
                 <br>Sabonete líquido johnson`s
@@ -285,7 +300,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/umedecidosHuggies.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Lenços Umedecidos</h5>
+              <h5 class="card-title text-center"> <?php echo $registro[111]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Huggies
                 <br>48 unidades
                 <br>Lenços umedecidos max clean
@@ -300,7 +315,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/coloniaJohnsons.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Colonia Johnsons</h5>
+              <h5 class="card-title text-center"><?php echo $registro[112]["nomeProduto"]  ?> </h5>
               <p class="card-text">Marca: Johnsons & Johnsons
                 <br>200 ml
                 <br>Johnson`s baby - Lavanda
@@ -315,7 +330,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/hipoglosPomada.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Pomada Hipoglos</h5>
+              <h5 class="card-title text-center"><?php echo $registro[113]["nomeProduto"]  ?> </h5>
               <p class="card-text"> Marca: Johnsons & Johnsons
                 <br>30 g
                 <br>Proteção 5 em 1
@@ -341,7 +356,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/saboneteLiquidoHuggies.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Sabonete Líquido</h5>
+              <h5 class="card-title text-center"> <?php echo $registro[114]["nomeProduto"]  ?> </h5>
               <p class="card-text">Marca: Huggies
                 <br>200 ml
                 <br>Sabonete líquido extra suave
@@ -356,7 +371,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/pampersSuper.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Fralda Pampers Super</h5>
+              <h5 class="card-title text-center"> <?php echo $registro[115]["nomeProduto"]  ?>  </h5>
               <p class="card-text">Marca: Pampers
                 <br>30 unidades
                 <br>Tamanho: G
@@ -371,7 +386,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/bicoMamadeira.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Bico de Mamadeira</h5>
+              <h5 class="card-title text-center"><?php echo $registro[116]["nomeProduto"]  ?> </h5>
               <p class="card-text">Marca: Avent
                 <br>02 unidades
                 <br>Bicos 100% silicone
@@ -386,7 +401,7 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/saboneteHuggies.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Sabonete Huggies</h5>
+              <h5 class="card-title text-center"> <?php echo $registro[117]["nomeProduto"]  ?> </h5>
               <p class="card-text">Marca: Huggies
                 <br>75 g
                 <br>Sabonete extra suave
@@ -440,7 +455,6 @@
   </footer>
 
 
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -450,8 +464,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-
 </body>
 
 </html>
+
 

@@ -48,6 +48,22 @@
 
   <br><br><br><br><br><br><br><br>
 
+  <?php
+    
+    $mysqli = new mysqli("localhost", "root", "", "farmaciapanaceia"); // Conexão com o banco de dados
+
+    for ($i=0; $i < 36; $i++) {
+      if ($mysqli->connect_error) { //Verifica se houve erro na conexão
+        die("Erro na conexão: " . $mysqli->connect_error); 
+      }
+      $query = "SELECT nomeProduto, valorUnidade FROM produto WHERE idProduto = $i"; // Query para buscar um registro da tabela 'produto'
+      $resultado[$i] = $mysqli->query($query); // Executa a query
+      $registro[$i] = $resultado[$i]->fetch_assoc(); // Obtém o registro retornado pela query
+      
+    }
+
+    ?>
+
   <section>
     <div class="container-fluid">
       <div class="row">
@@ -56,12 +72,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/autotesteCovid.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Autoteste Covid</h5>
+              <h5 class="card-title text-center"><?php echo $registro[17]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Eco Diagnóstica
                 <br>03 unidades
                 <br>Faixa etária: +14 
                 <br>
-                <R1><strong>R$ 39,99</strong></R1>
+                <R1><strong>R$ <?php echo $registro[17]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -71,12 +87,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/contourPlus.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Contour Plus</h5>
+              <h5 class="card-title text-center"><?php echo $registro[18]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Bayer
                 <br>50 unidades
                 <br>Faixa etária: Livre
                 <br>
-                <R1><strong>R$ 109,99</strong></R1>
+                <R1><strong>R$ <?php echo $registro[18]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -86,12 +102,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/kitSeringa.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Seringa para Insulina</h5>
+              <h5 class="card-title text-center"><?php echo $registro[19]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: BD
                 <br>10 unidades
                 <br>Faixa etária: Livre
                 <br>
-                <R1><strong>R$ 34,25</strong></R1>
+                <R1><strong>R$ <?php echo $registro[19]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -101,12 +117,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/munhequeiraElasticaBege.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Munhequeira - bege</h5>
+              <h5 class="card-title text-center"><?php echo $registro[20]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Mercur
                 <br>02 unidades
                 <br>Tamanho: M
                 <br>
-                <R1><strong>R$ 31,45</strong></R1>
+                <R1><strong>R$ <?php echo $registro[20]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -127,12 +143,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/munhequeiraElasticaPreta.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Munhequeir - preto</h5>
+              <h5 class="card-title text-center"><?php echo $registro[21]["nomeProduto"]  ?></h5>
               <p class="card-text"> Marca: Mercur
                 <br>02 unidades
                 <br>Tamanho: P
                 <br>
-                <R1><strong>R$ 29,67</strong></R1>
+                <R1><strong>R$ <?php echo $registro[21]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -142,12 +158,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/novopen.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">NovoPen 4</h5>
+              <h5 class="card-title text-center"><?php echo $registro[22]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Novo Nordisk
                 <br>01 unidade
                 <br>Faixa etária: Livre
                 <br>
-                <R1><strong>R$ 195,90</strong></R1>
+                <R1><strong>R$ <?php echo $registro[22]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -157,12 +173,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/oximetroPulso.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Oxímetro de Pulso </h5>
+              <h5 class="card-title text-center"><?php echo $registro[23]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Multilaser
                 <br>01 unidade
                 <br>Faixa etária: Livre
                 <br>
-                <R1><strong>R$ 84,90</strong></R1>
+                <R1><strong>R$ <?php echo $registro[23]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -172,12 +188,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/seringa.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Seringa</h5>
+              <h5 class="card-title text-center"><?php echo $registro[24]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: BD
                 <br>01 unidade
                 <br>Faixa etária: Livre
                 <br>
-                <R1><strong>R$ 2,39</strong></R1>
+                <R1><strong>R$ <?php echo $registro[24]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -198,12 +214,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/testeGravidez.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Teste de Gravidez</h5>
+              <h5 class="card-title text-center"><?php echo $registro[25]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: União Quimica 
                 <br>01 unidade
                 <br>Faixa etária: +18
                 <br>
-                <R1><strong>R$ 9,25</strong></R1>
+                <R1><strong>R$ <?php echo $registro[25]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -213,12 +229,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/umidificador.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Umidificador</h5>
+              <h5 class="card-title text-center"><?php echo $registro[26]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Multilaser
                 <br>2,1L 
                 <br>Faixa etária: Livre
                 <br>
-                <R1><strong>R$ 136,11</strong></R1>
+                <R1><strong>R$ <?php echo $registro[26]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -228,12 +244,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/testeDeFertilidade.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Teste de Fertilidade </h5>
+              <h5 class="card-title text-center"><?php echo $registro[28]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Alamar
                 <br>05 unidades 
                 <br>Faixa etária: +18
                 <br>
-                <R1><strong>R$ 50,75</strong></R1>
+                <R1><strong>R$ <?php echo $registro[28]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -241,14 +257,14 @@
         </div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/aparelhos/ataduraElasticatripla.png" alt="Imagem de capa do card">
+            <img class="card-img-top" src="img/aparelhos/coletorMenstrual.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Atadura Elástica - bege</h5>
-              <p class="card-text">Marca: Ideal
+              <h5 class="card-title text-center"><?php echo $registro[29]["nomeProduto"]  ?></h5>
+              <p class="card-text">Marca: BioWorld
                 <br>01 unidade
-                <br>Tamanho: único
+                <br>Tamanho: P
                 <br>
-                <R1><strong>R$ 49,27</strong></R1>
+                <R1><strong>R$ <?php echo $registro[29]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -269,13 +285,13 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/bombaTiraLeite.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Bomba de Tira-Leite</h5>
+              <h5 class="card-title text-center"><?php echo $registro[30]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: MAM
                 <br>01 unidade
                 <br>Tamanho: único
                 
                 <br>
-                <R1><strong>R$ 283,17</strong></R1>
+                <R1><strong>R$ <?php echo $registro[30]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -285,12 +301,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/micronebulizador.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Micronebulizador</h5>
+              <h5 class="card-title text-center"><?php echo $registro[31]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Soniclear
                 <br>01 unidade
                 <br>Tamanho: M
                 <br>
-                <R1><strong>R$ 31,58</strong></R1>
+                <R1><strong>R$ <?php echo $registro[31]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -300,12 +316,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/copinhosParaInalador.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Copinhos para Inalador</h5>
+              <h5 class="card-title text-center"><?php echo $registro[32]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Soniclear
                 <br>15 unidades
                 <br>Cor: Trasparente
                 <br>
-                <R1><strong>R$ 32,20</strong></R1>
+                <R1><strong>R$ <?php echo $registro[32]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -313,14 +329,14 @@
         </div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/aparelhos/mascaraTripla.png" alt="Imagem de capa do card">
+            <img class="card-img-top" src="img/aparelhos/mascaraParaDormir.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Máscara Tripla - rosa</h5>
-              <p class="card-text">Marca: União Med 
-                <br>10 unidade
-                <br>Tamanho: PP
+              <h5 class="card-title text-center"><?php echo $registro[33]["nomeProduto"]  ?></h5>
+              <p class="card-text">Marca: Mercur 
+                <br>01 unidade
+                <br>Tamanho: único
                 <br>
-                <R1><strong>R$ 44,13</strong></R1>
+                <R1><strong>R$ <?php echo $registro[33]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -339,29 +355,14 @@
         <div class="col-md"></div>
         <div class="col-md">
           <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/aparelhos/coletorMenstrual.png" alt="Imagem de capa do card">
-            <div class="card-body">
-              <h5 class="card-title text-center">Coletor Mestrual</h5>
-              <p class="card-text">Marca: BioWorld
-                <br>01 unidade
-                <br>Tamanho: P
-                <br>
-                <R1><strong>R$ 53,20</strong></R1>
-              </p>
-              <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/coxalEsporte.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Coxal Esporte - preto</h5>
+              <h5 class="card-title text-center"><?php echo $registro[34]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Mercur
                 <br>01 unidade
                 <br>Tamanho: P
                 <br>
-                <R1><strong>R$ 90,22</strong></R1>
+                <R1><strong>R$ <?php echo $registro[34]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -371,32 +372,23 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/aparelhos/nosewahs.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Nosewahs</h5>
+              <h5 class="card-title text-center"><?php echo $registro[35]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: AGP Med
                 <br>01 unidade
                 <br>Faixa etária: +01
                 <br>
-                <R1><strong>R$ 42,41</strong></R1>
+                <R1><strong>R$ <?php echo $registro[35]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
           </div>
         </div>
-        <div class="col-md">
-          <div class="card" style="width: 265px ;">
-            <img class="card-img-top" src="img/aparelhos/mascaraParaDormir.png" alt="Imagem de capa do card">
-            <div class="card-body">
-              <h5 class="card-title text-center">Máscara para Dormir</h5>
-              <p class="card-text">Marca: Mercur 
-                <br>01 unidade
-                <br>Tamanho: único
-                <br>
-                <R1><strong>R$ 26,18</strong></R1>
-              </p>
-              <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
-            </div>
-          </div>
-        </div>
+        <div class="col-md"></div>
+        <div class="col-md"></div>
+        <div class="col-md"></div> 
+        <div class="col-md"></div>
+        <div class="col-md"></div> 
+        <div class="col-md"></div>
         <div class="col-md"></div>
       </div>
     </div>
@@ -440,7 +432,6 @@
   </footer>
 
 
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -450,8 +441,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-
 </body>
 
 </html>
+
 

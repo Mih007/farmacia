@@ -13,7 +13,9 @@
   <title>Farmacia Panaceia | 24h Online</title>
 </head>
 
+
 <body style="background-color: ghostwhite;">
+
 
   <section>
     <div class="container-fluit fixed-top menuInicio text-center" style="background-color: #FFFFFF;">
@@ -27,10 +29,10 @@
           <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
 
             <form class="form-inline my-3 my-lg-0">
-              <input class="form-control mr-sm-2" style="margin-left: 340px; width:450px; height:50px ;" type="search" placeholder="Encontre o que procura" aria-label="Pesquisar">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="img/menu/pesquisar.png" alt="" width="30" height="35"></button>
+              <input name="busca" value="<?php
+                                          if (isset($_GET['busca'])) echo $_GET['busca'] ?>" class="form-control mr-sm-2" style="margin-left: 340px; width:450px; height:50px ;" type="search" placeholder="Encontre o que procura" aria-label="Pesquisar">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="img/menu/pesquisar.png" alt="" width="25" height="25"></button>
             </form>
-
 
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
@@ -93,7 +95,7 @@
               <a href="nutren.php"> <img class="d-block w-100" src="img/slides/nutrenSlides.png" alt="Oitvavo Slide"> </a>
             </div>
             <div class="carousel-item">
-              <a href="needs.php"> <img class="d-block w-100" src="img/slides/produtosNeedsSlides.png" alt="Nono Slide"> </a> 
+              <a href="needs.php"> <img class="d-block w-100" src="img/slides/produtosNeedsSlides.png" alt="Nono Slide"> </a>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="img/slides/powerChaiSlides.png" alt="Decimo Slide">
@@ -158,28 +160,26 @@
 
   <br><br><br><br><br>
   <?php
-    
-    $mysqli = new mysqli("localhost", "root", "root", "farmaciapanaceia"); // Conexão com o banco de dados
 
-    for ($i=1; $i < 10; $i++) {
-      if ($mysqli->connect_error) { //Verifica se houve erro na conexão
-        die("Erro na conexão: " . $mysqli->connect_error); 
-      }
-      $query = "SELECT nomeProduto, valorUnidade FROM produto WHERE idProduto = $i"; // Query para buscar um registro da tabela 'produto'
-      $resultado[$i] = $mysqli->query($query); // Executa a query
-      $registro[$i] = $resultado[$i]->fetch_assoc(); // Obtém o registro retornado pela query
-      
+  $mysqli = new mysqli("localhost", "root", "", "farmaciapanaceia"); // Conexão com o banco de dados
+  for ($i = 0; $i < 17; $i++) {
+    if ($mysqli->connect_error) { //Verifica se houve erro na conexão
+      die("Erro na conexão: " . $mysqli->connect_error);
     }
+    $query = "SELECT nomeProduto, valorUnidade FROM produto WHERE idProduto = $i"; // Query para buscar um registro da tabela 'produto'
+    $resultado[$i] = $mysqli->query($query); // Executa a query
+    $registro[$i] = $resultado[$i]->fetch_assoc(); // Obtém o registro retornado pela query
 
+  }
 
-    ?>
+  ?>
 
   <section>
     <div class="container-fluit comboDescInicio ">
       <div class="row ">
         <div class="col-md"></div>
         <div class="col-md">
-          <div class="card" style="width: 265px ;" >
+          <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/comboDesconto/sabonete.png" alt="Imagem de capa do card ">
             <div class="card-body">
               <h5 class="card-title text-center"><?php echo $registro[1]["nomeProduto"]  ?> </h5>
@@ -189,7 +189,7 @@
                   <R1 class="preçoAnterior">R$ 59,80</R1>
                 </s>
                 <br>
-                <R1><strong><?php echo $registro[1]["valorUnidade"] ?></strong></R1>
+                <R1><strong>R$ <?php echo $registro[1]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -207,7 +207,7 @@
                   <R1 class="preçoAnterior">R$ 407,80</R1>
                 </s>
                 <br>
-                <R1><strong><?php echo $registro[2]["valorUnidade"] ?></strong></R1>
+                <R1><strong>R$ <?php echo $registro[2]["valorUnidade"] ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -225,7 +225,7 @@
                   <R1 class="preçoAnterior">R$ 108,10</R1>
                 </s>
                 <br>
-                <R1><strong><?php echo $registro[3]["valorUnidade"]  ?></strong></R1>
+                <R1><strong>R$ <?php echo $registro[3]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -242,7 +242,7 @@
                   <R1 class="preçoAnterior">R$ 77,50</R1>
                 </s>
                 <br>
-                <R1><strong><?php echo $registro[4]["valorUnidade"]  ?></strong></R1>
+                <R1><strong>R$ <?php echo $registro[4]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -252,7 +252,6 @@
       </div>
     </div>
   </section>
-
 
   <br><br><br>
 
@@ -269,7 +268,7 @@
                 <br> 600ml
                 <br>Faixa etária: +16
                 <br>
-                <R1><strong>R$ 18,99</strong></R1>
+                <R1><strong>R$ <?php echo $registro[5]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -285,7 +284,7 @@
                 <br>+ Brinde
                 <br>Faixa etária: +16
                 <br>
-                <R1><strong>R$ 349,70</strong></R1>
+                <R1><strong>R$ <?php echo $registro[6]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -301,7 +300,7 @@
                 <br>60 Tabletes
                 <br>Faixa etária: +16
                 <br>
-                <R1><strong><?php echo $registro[7]["valorUnidade"]  ?></strong></R1>
+                <R1><strong>R$ <?php echo $registro[7]["valorUnidade"]  ?>0</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -317,7 +316,7 @@
                 <br>900g
                 <br>Faixa etária: +16
                 <br>
-                <R1><strong><?php echo $registro[8]["valorUnidade"]?>0</strong></R1>
+                <R1><strong>R$ <?php echo $registro[8]["valorUnidade"] ?>0</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -338,12 +337,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/beleza/revitaliftHialuronico.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Revitalift Hialurônico</h5>
+              <h5 class="card-title text-center"><?php echo $registro[9]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Loreal
                 <br> 30 ml
                 <br>Serúm preenchedor
                 <br>
-                <R1><strong>R$ 129,97</strong></R1>
+                <R1><strong>R$ <?php echo $registro[9]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -353,12 +352,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/beleza/neovadiol.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Neovadiol</h5>
+              <h5 class="card-title text-center"><?php echo $registro[10]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Vichy
                 <br> 50 g
                 <br>Creme efeito lifting
                 <br>
-                <R1><strong>R$ 303,35</strong></R1>
+                <R1><strong>R$ <?php echo $registro[10]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -368,12 +367,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/beleza/skinceuticalsGlycolic.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Skinceuticals Glycolic</h5>
+              <h5 class="card-title text-center"><?php echo $registro[11]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Skinceuticals
                 <br> 50 ml
                 <br>Promove brilho da pele
                 <br>
-                <R1><strong>R$ 556,08</strong></R1>
+                <R1><strong>R$ <?php echo $registro[11]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -383,12 +382,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/beleza/gelCremeRedutor.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Gel-Creme Redutor</h5>
+              <h5 class="card-title text-center"><?php echo $registro[12]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Hidrabene
                 <br> 200 g
                 <br>Gel-creme redutor de medidas
                 <br>
-                <R1><strong>R$ 70,79</strong></R1>
+                <R1><strong>R$ <?php echo $registro[12]["valorUnidade"]  ?> </strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -409,12 +408,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/chupetaNukSensitiveS1.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Chupeta NUK</h5>
+              <h5 class="card-title text-center"><?php echo $registro[13]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Sensitive
                 <br>Cor: Transparente
                 <br>Faixa etária: Bebê
                 <br>
-                <R1><strong>R$ 36,90</strong></R1>
+                <R1><strong>R$ <?php echo $registro[13]["valorUnidade"]  ?>0</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -424,12 +423,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/absorventeParaSeiosBemCare.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Absorvente Para Seios</h5>
+              <h5 class="card-title text-center"><?php echo $registro[14]["nomeProduto"]  ?></h5>
               <p class="card-text"> Marca: Philips
                 <br>30 unidades
                 <br>Faixa etária: Mamãe
                 <br>
-                <R1><strong>R$ 16,90</strong></R1>
+                <R1><strong>R$ <?php echo $registro[14]["valorUnidade"]  ?>0</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -439,12 +438,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/fraldaPampersPantsAjusteTotalTamanhoM.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Fralda Ajuste Total</h5>
+              <h5 class="card-title text-center"><?php echo $registro[15]["nomeProduto"]  ?></h5>
               <p class="card-text">Marca: Pampers
                 <br> M 112 unidades
                 <br>Faixa etária: Bebê
                 <br>
-                <R1><strong>R$ 129,99</strong></R1>
+                <R1><strong>R$ <?php echo $registro[15]["valorUnidade"]  ?></strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -454,12 +453,12 @@
           <div class="card" style="width: 265px ;">
             <img class="card-img-top" src="img/mamaeBebe/lencosUmedecidosJohnsonsBabyRecemNascidoSemFragrancia.png" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title text-center">Lenços Umedecidos</h5>
+              <h5 class="card-title text-center"><?php echo $registro[16]["nomeProduto"]  ?></h5>
               <p class="card-text"> Marca: Johnsons
                 <br>48 unidades
                 <br>Faixa etária: Bebê
                 <br>
-                <R1><strong>R$ 23,39</strong></R1>
+                <R1><strong>R$ <?php echo $registro[16]["valorUnidade"]  ?>0</strong></R1>
               </p>
               <button type="button" style="width: 225px ;" class="btn btn-outline-success">COMPRAR <img src="img/menu/carrinhoPreto.png" width="20" height="20"></button>
             </div>
@@ -468,6 +467,7 @@
         <div class="col-md"></div>
       </div>
     </div>
+
 
     <footer class="border-top text-muted bg">
       <div class="container-fluit">
@@ -506,9 +506,6 @@
       </div>
     </footer>
 
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -519,7 +516,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
-
 </body>
 
 </html>
+ 
